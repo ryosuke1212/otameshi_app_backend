@@ -7,10 +7,6 @@ app.get("/", (req: express.Request, res: express.Response) => {
   res.send("Hello, Node.js!");
 });
 
-app.listen(port, () => {
-  console.log(`port ${port} でサーバー起動中`);
-});
-
 app.get("/api", (req: express.Request, res: express.Response) => {
   res.json([
     {
