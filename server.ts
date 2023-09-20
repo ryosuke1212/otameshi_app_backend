@@ -1,7 +1,9 @@
 import express from "express";
+import cors from "cors";
 
 const app: express.Express = express();
 const port = 8000;
+app.use(cors());
 
 app.get("/", (req: express.Request, res: express.Response) => {
   res.send("Hello, Node.js!");
