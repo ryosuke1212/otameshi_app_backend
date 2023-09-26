@@ -38,6 +38,10 @@ app.get("/api", (req: express.Request, res: express.Response) => {
   ]);
 });
 
+app.get("/register", (req: express.Request, res: express.Response) => {
+  res.send("こちらはユーザー登録画面です。");
+});
+
 app.listen(port, () => {
   console.log(`port ${port} でサーバー起動中`);
 });
